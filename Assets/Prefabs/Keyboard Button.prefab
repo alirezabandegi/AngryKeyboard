@@ -291,6 +291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4343545538194614572}
   - component: {fileID: 824837323129624835}
+  - component: {fileID: 1881331639756838455}
   m_Layer: 0
   m_Name: Keyboard Button
   m_TagString: Untagged
@@ -327,6 +328,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+--- !u!114 &1881331639756838455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7786210695734781079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ad96759de08054c8339fad792f7fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8659036822842338642
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,8 @@ using TMPro;
 public class SpawnManagerSceipts : MonoBehaviour
 {
     public GameObject keyboardButtonPrefab;
+    public GameObject player;
+
 
     // Start is called before the first frame update
     void Start()
@@ -17,14 +19,15 @@ public class SpawnManagerSceipts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void spawnKeyboardButton()
     {
         Vector3 keyboardButtonPrefabPos = new Vector3(12, Random.Range(-3f, 2), 3);
-        
+
         Instantiate(keyboardButtonPrefab, keyboardButtonPrefabPos, keyboardButtonPrefab.transform.rotation);
-        Invoke("spawnKeyboardButton", Random.Range(1, 3));
+
+        Invoke("spawnKeyboardButton", Random.Range(1, 5));
     }
 }
