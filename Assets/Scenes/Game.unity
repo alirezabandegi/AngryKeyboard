@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &380921057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1222712507562481966, guid: e94120b04487a9048824f3f64e642251,
+    type: 3}
+  m_PrefabInstance: {fileID: 417477602}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &417477602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -316,7 +322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyboardButtonPrefab: {fileID: 7786210695734781079, guid: 59ea222be27d78942b5bf7433f9d62da,
     type: 3}
-  player: {fileID: 1222712507562481966, guid: e94120b04487a9048824f3f64e642251, type: 3}
+  player: {fileID: 380921057}
 --- !u!4 &871739202
 Transform:
   m_ObjectHideFlags: 0

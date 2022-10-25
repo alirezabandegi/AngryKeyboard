@@ -19,13 +19,25 @@ public class PlayerMovmentScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        playerMovement();
+
+        playerOutOfScreen();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        isOnGround = true;
+    }
+
+    private void playerMovement()
+    {
         HorizontalInput = Input.GetAxis("Horizontal");
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(Vector3.right * HorizontalInput * moveSpeed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(Vector3.right * HorizontalInput * moveSpeed * Time.deltaTime);
         }
@@ -36,8 +48,19 @@ public class PlayerMovmentScript : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void playerOutOfScreen()
     {
-        isOnGround = true;
+        if(gameObject.transform.position.x >= 9.5f)
+        {
+            gameObject.transform.position = new Vector3(9.5f, gameObject.transform.position.y, gameObject.transform.position.z);
+        }
+        else if (gameObject.transform.position.x <= -9.5f)
+        {
+            gameObject.transform.position = new Vector3(-9.5f, gameObject.transform.position.y, gameObject.transform.position.z);
+        }
+        else if (gameObject.transform.position.y >= 4)
+        {
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, 4f, gameObject.transform.position.z);
+        }
     }
 }
