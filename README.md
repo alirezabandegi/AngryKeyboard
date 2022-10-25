@@ -13,8 +13,8 @@ The background is black and white. The keys on the keyboard are traditionally cr
 
 
 ### UI/Controls:
-- A: Goes left
-- D: Goes right
+- A & Left Arrow: Goes left
+- D & Right Arrow: Goes right
 - Space: Jump<br><br>
 
 
