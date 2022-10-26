@@ -9,8 +9,6 @@ public class SpawnManagerSceipts : MonoBehaviour
     public GameObject keyboardButtonPrefab;
     public GameObject player;
 
-    private float cubePos = 0;
-
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +24,9 @@ public class SpawnManagerSceipts : MonoBehaviour
 
     void spawnKeyboardButton()
     {
-        Vector3 keyboardButtonPrefabPos = new Vector3(12, Random.Range(-2.5f, 1.5f) , 3);
-        cubePos = keyboardButtonPrefabPos.y;
-        Debug.Log(cubePos);
+        Vector3 keyboardButtonPrefabPos = new Vector3(12, Random.Range(-2.5f, 1.5f), 3);
         Instantiate(keyboardButtonPrefab, keyboardButtonPrefabPos, keyboardButtonPrefab.transform.rotation);
 
-        Invoke("spawnKeyboardButton", Random.Range(1, 5));
+        Invoke("spawnKeyboardButton", Random.Range(1, 3));
     }
 }

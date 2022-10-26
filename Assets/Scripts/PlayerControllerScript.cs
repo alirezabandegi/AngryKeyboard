@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovmentScript : MonoBehaviour
+public class PlayerControllerScript : MonoBehaviour
 {
     private Rigidbody rb;
     private float HorizontalInput;
