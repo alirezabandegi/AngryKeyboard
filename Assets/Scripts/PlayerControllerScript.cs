@@ -41,14 +41,8 @@ public class PlayerControllerScript : MonoBehaviour
         {
             HorizontalInput = Input.GetAxis("Horizontal");
 
-            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-            {
-                transform.Translate(Vector3.right * HorizontalInput * moveSpeed * Time.deltaTime);
-            }
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-            {
-                transform.Translate(Vector3.right * HorizontalInput * moveSpeed * Time.deltaTime);
-            }
+            transform.Translate(Vector3.right * HorizontalInput * moveSpeed * Time.deltaTime);
+            
             if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
             {
                 rb.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
