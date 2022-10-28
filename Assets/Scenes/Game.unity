@@ -528,9 +528,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68068e5793efe4439cd6b06f60053bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToDestroy: 0
-  bigExplosion: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+  whichParticle: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 3}
+  where: {fileID: 1310152776}
+  timeToDestroy: 0
 --- !u!1 &1359048071
 GameObject:
   m_ObjectHideFlags: 0
