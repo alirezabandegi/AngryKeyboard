@@ -9,7 +9,7 @@ Basic mechanics A/D + Space<br><br>
 
 
 ### Art:
-The background is black and white. The keys on the keyboard are traditionally created from the right side and the user jumps on them and moves forward. The keys are different colors or can be white.<br><br>
+The background is white. The keys on the keyboard are traditionally created from the right side and the user jumps on them and moves forward. The keys are different colors or can be white.<br><br>
 
 
 ### UI/Controls:
